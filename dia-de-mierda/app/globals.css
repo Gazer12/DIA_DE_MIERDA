@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --background: #16111b;
+  --foreground: #eadfed;
+
+  --color-surface-container: #231e27;
+  --color-surface-container-low: #1f1a23;
+  --color-surface-container-high: #2e2832;
+  --color-surface-container-highest: #39323d;
+  --color-surface-variant: #39323d;
+
+  --color-primary: #ddb7ff;
+  --color-secondary: #4cd7f6;
+  --color-tertiary: #ffb0cd;
+  --color-error: #ffb4ab;
+
+  --color-outline: #988d9f;
+  --color-outline-variant: #4d4354;
+  --color-on-surface-variant: #cfc2d6;
+  --color-on-background: #eadfed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-surface-container: var(--color-surface-container);
+  --color-surface-container-low: var(--color-surface-container-low);
+  --color-surface-container-high: var(--color-surface-container-high);
+  --color-surface-container-highest: var(--color-surface-container-highest);
+  --color-surface-variant: var(--color-surface-variant);
+
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-tertiary: var(--color-tertiary);
+  --color-error: var(--color-error);
+
+  --color-outline: var(--color-outline);
+  --color-outline-variant: var(--color-outline-variant);
+  --color-on-surface-variant: var(--color-on-surface-variant);
+  --color-on-background: var(--color-on-background);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-pixel: var(--font-space-mono), monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+/* ---- Utilidades pixel/retro ---- */
+
+.pixel-border-sm {
+  box-shadow:
+    0 -2px 0 0 #000,
+    0 2px 0 0 #000,
+    -2px 0 0 0 #000,
+    2px 0 0 0 #000;
+}
+
+.arcade-btn-shadow {
+  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 1);
+}
+
+.arcade-btn-shadow:active {
+  box-shadow: 0 0px 0 0 rgba(0, 0, 0, 1);
+  transform: translateY(6px);
+}
+
+@keyframes flicker {
+  0% { opacity: 0.97; }
+  5% { opacity: 0.95; }
+  10% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.flicker-text {
+  animation: flicker 3s infinite;
+}
+
+/* ---- Efecto scanlines (líneas de TV vieja), aplicado a toda la app ---- */
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.15) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04));
+  background-size: 100% 4px, 3px 100%;
+  opacity: 0.4;
+}

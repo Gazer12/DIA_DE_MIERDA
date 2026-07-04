@@ -1,0 +1,131 @@
+<!DOCTYPE html><html class="dark" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>DÍA DE MIERDA - Gastos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=Geist:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Retro-Brutalism Custom Utilities */
+        .pixel-border {
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+        }
+        .pixel-border-sm {
+            box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+        }
+        .active-click:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+        }
+        
+        @keyframes flicker {
+            0% { opacity: 1; }
+            5% { opacity: 0.8; }
+            10% { opacity: 1; }
+            15% { opacity: 0.9; }
+            20% { opacity: 1; }
+            100% { opacity: 1; }
+        }
+        .flicker-text {
+            animation: flicker 3s infinite;
+        }
+
+        /* Custom scrollbar for the 16-bit look */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #16111b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #39323d;
+            border: 2px solid #16111b;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#16111b",
+                      "on-secondary-container": "#00424e",
+                      "surface-container": "#231e27",
+                      "tertiary": "#ffb0cd",
+                      "on-surface-variant": "#cfc2d6",
+                      "surface": "#16111b",
+                      "secondary": "#4cd7f6",
+                      "inverse-primary": "#842bd2",
+                      "on-secondary-fixed-variant": "#004e5c",
+                      "surface-bright": "#3d3741",
+                      "inverse-on-surface": "#342e38",
+                      "error": "#ffb4ab",
+                      "on-tertiary-fixed": "#3e0022",
+                      "on-secondary": "#003640",
+                      "outline": "#988d9f",
+                      "on-tertiary-fixed-variant": "#8c0053",
+                      "on-primary-fixed-variant": "#6900b3",
+                      "inverse-surface": "#eadfed",
+                      "on-background": "#eadfed",
+                      "error-container": "#93000a",
+                      "on-primary": "#490080",
+                      "on-tertiary-container": "#570032",
+                      "primary-fixed-dim": "#ddb7ff",
+                      "secondary-container": "#03b5d3",
+                      "on-surface": "#eadfed",
+                      "on-secondary-fixed": "#001f26",
+                      "on-error": "#690005",
+                      "outline-variant": "#4d4354",
+                      "primary": "#ddb7ff",
+                      "surface-container-highest": "#39323d",
+                      "tertiary-fixed-dim": "#ffb0cd",
+                      "on-error-container": "#ffdad6",
+                      "secondary-fixed-dim": "#4cd7f6",
+                      "tertiary-fixed": "#ffd9e4",
+                      "surface-tint": "#ddb7ff",
+                      "primary-container": "#b76dff",
+                      "surface-variant": "#39323d",
+                      "on-tertiary": "#640039",
+                      "tertiary-container": "#f751a1",
+                      "primary-fixed": "#f0dbff",
+                      "on-primary-fixed": "#2c0051",
+                      "surface-container-lowest": "#110c15",
+                      "surface-container-high": "#2e2832",
+                      "surface-dim": "#16111b",
+                      "on-primary-container": "#400071",
+                      "surface-container-low": "#1f1a23",
+                      "secondary-fixed": "#acedff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "0px",
+                      "xl": "0px",
+                      "full": "0px"
+              },
+              "spacing": {
+                      "gutter": "16px",
+                      "unit": "4px",
+                      "container-max": "1200px",
+                      "margin-mobile": "16px",
+                      "margin-desktop": "32px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Geist"],
+                      "label-lg": ["Space Mono"],
+                      "headline-lg": ["Space Mono"],
+                      "headline-xl": ["Space Mono"],
+                      "headline-md": ["Space Mono"],
+                      "body-md": ["Geist"],
+                      "label-md": ["Space Mono"]
+              },
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden"><div class="flex h-screen overflow-hidden"><aside class="hidden md:flex flex-col h-full p-gutter gap-4 bg-surface-container w-64 border-r-4 border-surface-variant shadow-[8px_0px_0px_0px_rgba(0,0,0,1)]"><h1 class="font-headline-lg text-headline-lg text-tertiary tracking-tighter italic" style="font-size: 32px; font-weight: 700; font-style: italic; color: rgb(255, 176, 205); line-height: 1.2;">MENU&nbsp; &nbsp; &nbsp; PRINCIPAL</h1><nav class="flex flex-col gap-3"><a class="flex items-center gap-3 p-3 text-on-surface hover:translate-x-1 transition-transform font-label-lg text-label-lg group" href="#"><span class="material-symbols-outlined">task_alt</span> Tareas</a><a class="flex items-center gap-3 p-3 text-on-surface hover:translate-x-1 transition-transform font-label-lg text-label-lg group" href="#"><span class="material-symbols-outlined">calendar_today</span> Eventos</a><a class="flex items-center gap-3 p-3 bg-secondary text-on-secondary border-4 border-on-secondary shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] translate-y-[-2px] font-label-lg text-label-lg" href="#"><span class="material-symbols-outlined">payments</span> Gastos</a><a class="flex items-center gap-3 p-3 text-on-surface hover:translate-x-1 transition-transform font-label-lg text-label-lg group" href="#"><span class="material-symbols-outlined">account_circle</span> Perfil</a></nav></aside><div class="flex-1 flex flex-col overflow-hidden"><header class="flex justify-between items-center px-gutter h-16 bg-background border-b-4 border-surface-variant shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] z-50"><div class="flex items-center gap-4"><button class="text-primary hover:text-tertiary transition-colors"><span class="material-symbols-outlined text-headline-md">joystick</span></button><h1 class="font-headline-md text-headline-md font-bold text-secondary tracking-tighter">DÍA DE MIERDA</h1></div><div class="flex items-center gap-4"><button class="text-primary hover:text-tertiary transition-colors"><span class="material-symbols-outlined text-headline-md">settings</span></button></div></header><main class="flex-1 overflow-y-auto p-gutter md:p-8 pb-24 md:pb-8"><section class="mb-10"><div class="bg-black border-4 border-secondary p-6 relative overflow-hidden pixel-border"><div class="absolute top-0 left-0 w-full h-1 bg-secondary/30"></div><div class="flex flex-col items-center justify-center"><span class="text-secondary font-label-lg text-label-lg tracking-[0.2em] mb-2 uppercase">MARCADOR DE RIQUEZA</span><div class="text-tertiary font-headline-xl text-headline-xl tracking-widest flicker-text">TOTAL ORO: <span class="text-secondary">$12,450</span></div></div><div class="absolute bottom-2 right-4 text-[10px] text-outline font-label-md opacity-50">INSERT COIN TO RESET</div></div></section><div class="grid grid-cols-1 lg:grid-cols-12 gap-8"><section class="lg:col-span-5"><div class="bg-surface-container-high border-4 border-on-background p-6 pixel-border"><h3 class="font-headline-md text-headline-md text-primary mb-6 flex items-center gap-2"><span class="material-symbols-outlined">add_shopping_cart</span> REGISTRAR GASTO</h3><form class="space-y-6"><div><label class="block text-label-md text-on-surface-variant mb-2 uppercase tracking-tighter">Descripción del Item</label><input class="w-full bg-black border-2 border-secondary p-4 text-on-surface focus:outline-none focus:ring-0 focus:border-tertiary transition-colors uppercase font-label-lg" placeholder="POCIÓN DE CAFÉ..." type="text"></div><div class="grid grid-cols-2 gap-4"><div><label class="block text-label-md text-on-surface-variant mb-2 uppercase tracking-tighter">Categoría</label><select class="w-full bg-black border-2 border-secondary p-4 text-on-surface focus:outline-none focus:ring-0 focus:border-tertiary transition-colors font-label-lg"><option>EQUIPO</option><option>COMIDA</option><option>TRANSPORTE</option><option>OCIO</option></select></div><div><label class="block text-label-md text-on-surface-variant mb-2 uppercase tracking-tighter">Monto (Oro)</label><div class="relative"><span class="absolute left-4 top-1/2 -translate-y-1/2 text-secondary">$</span><input class="w-full bg-black border-2 border-secondary p-4 pl-10 text-on-surface focus:outline-none focus:ring-0 focus:border-tertiary transition-colors font-label-lg" placeholder="0000" type="number"></div></div></div><button class="w-full bg-tertiary text-on-tertiary-fixed p-4 border-b-4 border-r-4 border-on-tertiary-fixed-variant active:translate-y-1 active:border-b-0 active:border-r-0 font-headline-md text-headline-md uppercase tracking-tight flex justify-center items-center gap-2 active-click" type="button"><span class="material-symbols-outlined">bolt</span> COMPRAR</button></form></div><div class="mt-8 relative h-48 border-4 border-outline bg-surface-container-lowest overflow-hidden flex items-center justify-center"><div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, #fff 1px, transparent 0); background-size: 16px 16px;"></div><div class="text-center"><span class="material-symbols-outlined text-[64px] text-secondary mb-2 flicker-text">monetization_on</span><p class="font-label-md text-outline">EL DINERO NO DA LA FELICIDAD,<br>PERO NUNCA NADIE LLORO TRISTE EN&nbsp;<div style="text-align: start; ">UN YATE.PIPIPI</div></p></div></div></section><section class="lg:col-span-7"><div class="bg-surface-container border-4 border-on-background p-6 pixel-border h-full"><div class="flex justify-between items-end mb-6"><h3 class="font-headline-md text-headline-md text-secondary flex items-center gap-2"><span class="material-symbols-outlined">inventory_2</span> INVENTARIO RECIENTE</h3><span class="text-label-md text-outline">PÁGINA 1/1</span></div><div class="space-y-2"><div class="grid grid-cols-12 gap-4 px-4 py-2 bg-surface-variant/50 border-b-2 border-secondary text-label-md text-tertiary font-bold uppercase"><div class="col-span-6">Item</div><div class="col-span-3 text-center">Cat.</div><div class="col-span-3 text-right">Oro</div></div><div class="group grid grid-cols-12 gap-4 p-4 border-b-2 border-dashed border-outline items-center hover:bg-white/5 transition-colors"><div class="col-span-6 flex items-center gap-3"><span class="material-symbols-outlined text-secondary">local_cafe</span><span class="font-label-lg text-on-surface">CAFÉ DE SUPERVIVENCIA</span></div><div class="col-span-3 flex justify-center"><span class="bg-tertiary-container text-on-tertiary-container px-2 py-1 text-label-md font-bold uppercase">COMIDA</span></div><div class="col-span-3 text-right flex items-center justify-end gap-2"><span class="font-headline-md text-secondary">$350</span><button class="bg-error text-on-error p-1 hover:bg-error-container hover:text-on-error-container transition-colors active-click"><span class="material-symbols-outlined text-sm">delete</span></button></div></div><div class="group grid grid-cols-12 gap-4 p-4 border-b-2 border-dashed border-outline items-center hover:bg-white/5 transition-colors"><div class="col-span-6 flex items-center gap-3"><span class="material-symbols-outlined text-secondary">directions_bus</span><span class="font-label-lg text-on-surface">VIAJE RÁPIDO (METRO)</span></div><div class="col-span-3 flex justify-center"><span class="bg-secondary-container text-on-secondary-container px-2 py-1 text-label-md font-bold uppercase">TRANSP.</span></div><div class="col-span-3 text-right flex items-center justify-end gap-2"><span class="font-headline-md text-secondary">$120</span><button class="bg-error text-on-error p-1 hover:bg-error-container hover:text-on-error-container transition-colors active-click"><span class="material-symbols-outlined text-sm">delete</span></button></div></div><div class="group grid grid-cols-12 gap-4 p-4 border-b-2 border-dashed border-outline items-center hover:bg-white/5 transition-colors"><div class="col-span-6 flex items-center gap-3"><span class="material-symbols-outlined text-secondary">sports_esports</span><span class="font-label-lg text-on-surface">UPGRADE: DLC DE VIDA</span></div><div class="col-span-3 flex justify-center"><span class="bg-primary-container text-on-primary-container px-2 py-1 text-label-md font-bold uppercase">OCIO</span></div><div class="col-span-3 text-right flex items-center justify-end gap-2"><span class="font-headline-md text-secondary">$2,990</span><button class="bg-error text-on-error p-1 hover:bg-error-container hover:text-on-error-container transition-colors active-click"><span class="material-symbols-outlined text-sm">delete</span></button></div></div><div class="group grid grid-cols-12 gap-4 p-4 border-b-2 border-dashed border-outline items-center hover:bg-white/5 transition-colors opacity-60"><div class="col-span-6 flex items-center gap-3"><span class="material-symbols-outlined text-secondary">history_edu</span><span class="font-label-lg text-on-surface line-through text-outline">IMPUESTOS DEL REINO</span></div><div class="col-span-3 flex justify-center"><span class="bg-surface-variant text-on-surface-variant px-2 py-1 text-label-md font-bold uppercase">OTROS</span></div><div class="col-span-3 text-right flex items-center justify-end gap-2"><span class="font-headline-md text-secondary">$4,500</span><button class="bg-error text-on-error p-1 hover:bg-error-container hover:text-on-error-container transition-colors active-click"><span class="material-symbols-outlined text-sm">delete</span></button></div></div></div><div class="mt-8 flex gap-4"><button class="flex-1 bg-surface-bright text-on-surface p-2 border-2 border-on-surface active-click uppercase font-label-md">ANTERIOR</button><button class="flex-1 bg-surface-bright text-on-surface p-2 border-2 border-on-surface active-click uppercase font-label-md">SIGUIENTE</button></div></div></section></div></main></div></div><nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 md:hidden bg-surface border-t-4 border-surface-variant"><a class="flex flex-col items-center justify-center text-on-surface-variant opacity-80 hover:opacity-100 active:scale-95 transition-transform" href="#"><span class="material-symbols-outlined">checklist</span><span class="font-label-md text-label-md uppercase">Tareas</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant opacity-80 hover:opacity-100 active:scale-95 transition-transform" href="#"><span class="material-symbols-outlined">event</span><span class="font-label-md text-label-md uppercase">Eventos</span></a><a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container border-2 border-on-primary-container shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] p-2" href="#"><span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">monetization_on</span><span class="font-label-md text-label-md uppercase">Gastos</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant opacity-80 hover:opacity-100 active:scale-95 transition-transform" href="#"><span class="material-symbols-outlined">person</span><span class="font-label-md text-label-md uppercase">Perfil</span></a></nav><div class="fixed inset-0 pointer-events-none opacity-[0.03] bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] z-[100] bg-[length:100%_4px,3px_100%]"></div></body></html>
